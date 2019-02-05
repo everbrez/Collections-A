@@ -1,2 +1,2 @@
-# Collection-A
-Collection-A
+# Collections-A
+Collections-A
