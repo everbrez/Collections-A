@@ -59,7 +59,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "lint": "eslint ./src/**/*.{js,jsx,mjs} -o ./test/lint.html -f html --fix",
-    "coverage": "node scripts/test.js --coverage --coverageReporters=text-lcov | ./node_modules/.bin/coveralls"
+    "coverage": "node scripts/test.js --coverageReporters=text-lcov | ./node_modules/.bin/coveralls"
   },
   "eslintConfig": {
     "extends": "react-app"
