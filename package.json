@@ -108,8 +108,8 @@
       "node"
     ],
     "watchPlugins": [
-      "/mnt/e/collections/node_modules/jest-watch-typeahead/filename.js",
-      "/mnt/e/collections/node_modules/jest-watch-typeahead/testname.js"
+      "./node_modules/jest-watch-typeahead/filename.js",
+      "./node_modules/jest-watch-typeahead/testname.js"
     ]
   },
   "babel": {
