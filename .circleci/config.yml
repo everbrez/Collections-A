@@ -34,5 +34,5 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: yarn test --coverage --watchAll
+      - run: yarn test --coverage --watchAll --coverageReporters=text-lcov | coveralls
       - run: yarn run build
