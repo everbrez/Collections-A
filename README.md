@@ -4,7 +4,7 @@
 [![CircleCI](https://circleci.com/gh/everbrez/Collections-A.svg?style=shield)](https://circleci.com/gh/everbrez/Collections-A)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> this project is the server side of Collections:A. It is a hub for user to collect items like animes, movies, pictures and so on... 
+> this project is the font-end side of Collections:A. It is a hub for user to collect items like animes, movies, pictures and so on... 
 > It's a Progressive Web Application, works well in local env even if there is no network connection.
 
 # Contribution
