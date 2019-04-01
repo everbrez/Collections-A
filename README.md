@@ -14,3 +14,13 @@ start the develop server
 ```bash
 yarn start
 ```
+
+# TODOS
+
+- [ ] design
+- [ ] core functions
+- [ ] PWA optimization
+- [ ] theme system
+- [ ] modile end
+- [ ] performance optimization
+- [ ] SEO optimization
