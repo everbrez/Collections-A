@@ -1,0 +1,12 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 210">
+  <defs>
+    <style>.a,.b{fill:#fff;}.a{stroke:#f15a24;stroke-miterlimit:10;stroke-width:10px;}.c{font-size:108.16px;fill:#f15a24;font-family:KomikaAxis, Komika Axis;}
+    .c:hover {fill: currentColor}
+    </style>
+  </defs>
+  <circle class="a" cx="105" cy="105" r="100"/>
+  <circle class="b" cx="155" cy="191.6" r="5"/>
+  <circle class="b" cx="155" cy="18.4" r="5"/>
+  <text class="c" transform="translate(61.58 142.5) scale(1.21 1)">A</text>
+</svg>
