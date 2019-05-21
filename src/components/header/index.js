@@ -1,21 +1,26 @@
 import React, { useState } from 'react'
-import styles from './header.module.scss'
-import { ReactComponent as Logo} from '../icon/logo.svg'
+import classes from './header.module.scss'
+import { ReactComponent as SearchIcon } from "../icon/search.svg"
+import { ReactComponent as MailIcon } from "../icon/mail.svg";
 
 function Header(props) {
   return (
-    <header className={styles.header}>
-      <i className={styles.logo}>
-        <Logo />
-      </i>
-
-      <div className={styles.search}>
-        <input type="text" className={styles.input} placeholder="search...." />
+    <header className={classes.header}>
+      <div className={classes.logo}>
+        Collections
       </div>
-
-      <div className={styles.message}></div>
-      <div className={styles.setting}></div>
-      <div className={styles.profile}></div>
+      <div className={classes['search-container']}>
+        <SearchIcon className={classes['search-icon']} />
+        <input type="text" placeholder="Type to search ..." />
+      </div>
+      <ul className={classes['nav-right']}>
+        <li className={classes['nav-right-item']}>
+          <MailIcon className={classes.mail} />
+        </li>
+        <li className={classes['nav-right-item']}>
+          user
+        </li>
+      </ul>
     </header>
   )
 }
