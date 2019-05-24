@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
-import styles from './app.module.scss'
-import Header from './components/header'
-import Content from './components/content'
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import Home from './pages/home'
+import NotMatch from './pages/404'
+import Register from './pages/register'
 
 class App extends Component {
   render() {
     return (
-      <main>
-        <Header />
-        <Content />
-      </main>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/register" component={Register} />
+          <Route component={NotMatch} />
+        </Switch>
+      </Router>
     );
   }
 }
