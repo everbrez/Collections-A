@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import classes from './header.module.scss'
 import { ReactComponent as SearchIcon } from "../icon/search.svg"
-import { ReactComponent as MailIcon } from "../icon/mail.svg";
 
 function Header(props) {
   return (
@@ -15,7 +14,7 @@ function Header(props) {
       </div>
       <ul className={classes['nav-right']}>
         <li className={classes['nav-right-item']}>
-          <MailIcon className={classes.mail} />
+          mail
         </li>
         <li className={classes['nav-right-item']}>
           user
