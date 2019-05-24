@@ -8,7 +8,7 @@ function Content(props) {
     <main className={classes.container}>
       <Sidebar className={classes.aside}/>
       <section className={classes['content-container']}>
-        main-conteint
+        Content
       </section>
     </main>
   )

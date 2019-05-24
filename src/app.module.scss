@@ -4,3 +4,15 @@ svg {
   color: #d1d8de;
   fill: currentColor;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+}
+
+a:visited, a:active {
+  color: inherit;
+}

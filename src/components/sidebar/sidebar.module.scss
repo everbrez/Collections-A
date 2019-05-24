@@ -29,5 +29,10 @@ $nav-item-height: 45px;
     &:hover {
       background-color: $split-line-color;
     }
+
+    a {
+      display: block;
+      height: 100%;
+    }
   }
 }

@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.form-container {
+  flex: 1 1;
+  align-self: center;
+  text-align: center;
+}
+
+.form {
+  padding: 3em 0;
+  display: inline-block;
+  text-align: left;
+  label {
+    display: block;
+    color: #585858
+  }
+
+  button {
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 3em;
+    color: white;
+    background-color: #A349A8;
+    padding: 1em 3em;
+    outline: none;
+    cursor: pointer;
+    &:hover, &:focus {
+      background-color: rgba(163, 73, 168, .8)
+    }
+  }
+
+  input {
+    border: none;
+    border: 1px solid #F1E2F6;
+    outline: none;
+    padding: .8em 1.5em;
+    border-radius: 10px;
+    margin: 1em 0 1.5em 0;
+
+    &:focus {
+      box-shadow: 0 0 0 2px #F1E2F6;
+    }
+  }
+}

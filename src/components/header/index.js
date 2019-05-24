@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from "react-router-dom"
 import classes from './header.module.scss'
 import { ReactComponent as SearchIcon } from "../icon/search.svg"
 
@@ -17,7 +18,9 @@ function Header(props) {
           mail
         </li>
         <li className={classes['nav-right-item']}>
-          user
+          <Link to="register">
+            login
+          </Link>
         </li>
       </ul>
     </header>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import './app.module.scss'
 import Home from './pages/home'
 import NotMatch from './pages/404'
 import Register from './pages/register'
