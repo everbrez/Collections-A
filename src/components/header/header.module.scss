@@ -1,5 +1,6 @@
 $header-height: 80px;
 $header-padding: 40px;
+$logo-width: 280px;
 
 $split-line-color: #eaeef4;
 
@@ -15,7 +16,7 @@ $split-line-color: #eaeef4;
 }
 
 .logo {
-  flex: 0 0 280px;
+  flex: 0 0 $logo-width;
   line-height: $header-height;
   font-weight: bold;
   font-size: 34px;

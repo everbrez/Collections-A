@@ -1,0 +1,33 @@
+$sidebar-width: 280px;
+$sidebar-padding: 40px;
+$split-line-color: #eaeef4;
+
+$nav-item-height: 45px;
+
+.container {
+  display: inline-block;
+  width: $sidebar-width - 1 + $sidebar-padding;
+
+  border: 1px $split-line-color;
+  border-right-style: solid;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .nav-item {
+    line-height: $nav-item-height;
+    padding-left: $sidebar-padding;
+    margin: 5px 0;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    &:hover {
+      background-color: $split-line-color;
+    }
+  }
+}
