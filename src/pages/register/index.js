@@ -10,21 +10,21 @@ export default function Register(props) {
       <main className={classes['container']}>
         <Sidebar />
         <section className={classes['form-container']}>
-          <form className={classes.form}>
+          <form className={classes.form} action="http://localhost:8888/register" method="post" enctype="application/x-www-form-urlencoded">
             <label for="username">
               username
             </label>
-            <input type="text" placeholder="username" />
+            <input type="text" placeholder="username" required id="username" name="userName"/>
 
             <label for="password">
               password
             </label>
-            <input type="password" placeholder="password" />
+            <input type="password" placeholder="password" required id="password" name="password"/>
 
             <label>
               email
             </label>
-            <input type="mail" placeholder="email" />
+            <input type="mail" placeholder="email" id="mail" name="email"/>
 
             <button type="submit">
               Sign Up
