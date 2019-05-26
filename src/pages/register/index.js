@@ -14,17 +14,17 @@ export default function Register(props) {
             <label for="username">
               username
             </label>
-            <input type="text" placeholder="username" required id="username" name="userName"/>
+            <input type="text" placeholder="username" required id="username" name="userName" autoComplete="username"/>
 
             <label for="password">
               password
             </label>
-            <input type="password" placeholder="password" required id="password" name="password"/>
+            <input type="password" placeholder="password" required id="password" name="password" autoComplete="new-password"/>
 
             <label>
               email
             </label>
-            <input type="mail" placeholder="email" id="mail" name="email"/>
+            <input type="mail" placeholder="email" id="mail" name="email" autoComplete="email"/>
 
             <button type="submit">
               Sign Up
