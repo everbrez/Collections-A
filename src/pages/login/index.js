@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import classnames from 'classnames'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
+import { connect } from 'react-redux'
+
 import Header from '../../components/header'
 import classes from './login.module.scss'
 
@@ -9,8 +11,17 @@ import { ReactComponent as Lock } from '../../components/icon/lock.svg'
 import { ReactComponent as Eye } from '../../components/icon/eye.svg'
 import { ReactComponent as EyeOpen } from '../../components/icon/eye_open.svg'
 
+import { isLogin } from '../../utils'
+import { addUser } from '../../actions'
+
 function Login(props) {
   const [showPassword, togglePasswordVisibility] = useState(false)
+
+  const { history, addUser } = props
+
+  if (isLogin()) {
+    history.push('/')
+  }
 
   function handleSubmit(event) {
     event.preventDefault()
@@ -32,9 +43,15 @@ function Login(props) {
       method: 'POST'
     })
     .then(res => res.json())
-    .then(e => console.log(e))
-    .catch(e => console.log(e))
-    return null
+    .then(e => {
+      if (e.error) throw new Error(e.error)
+      console.log(e)
+      addUser(e)
+      history.push('/')
+    })
+    .catch(e => console.log(e.message))
+
+    return false
   }
 
   return (
@@ -49,6 +66,7 @@ function Login(props) {
             <div className={classnames(classes['input-container'], classes['userName-container'])}>
               <User className={classes['icon']}/>
               <input
+                required
                 type="text"
                 id="userName"
                 name="userName"
@@ -60,6 +78,7 @@ function Login(props) {
             <div className={classnames(classes['input-container'], classes['password-container'])}>
               <Lock className={classes['icon']}/>
               <input
+                required
                 type={showPassword ? 'text' : 'password'}
                 id="password"
                 name="password"
@@ -100,4 +119,8 @@ function Login(props) {
   )
 }
 
-export default Login
+const mapDispatchToProps = dispatch => ({
+  addUser: user => dispatch(addUser(user))
+})
+
+export default connect(null, mapDispatchToProps)(withRouter(Login))

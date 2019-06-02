@@ -1,5 +1,6 @@
-function add(state, action) {
-  return state
-}
+import { combineReducers } from 'redux'
+import user from './user'
 
-export default add
+export default combineReducers({
+  user
+})

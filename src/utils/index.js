@@ -1,0 +1,1 @@
+export const isLogin = () => document.cookie.includes('sessionId')
