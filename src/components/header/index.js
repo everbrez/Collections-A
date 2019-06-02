@@ -18,8 +18,13 @@ function Header(props) {
           mail
         </li>
         <li className={classes['nav-right-item']}>
-          <Link to="register">
+          <Link to="login">
             login
+          </Link>
+        </li>
+        <li className={classes['nav-right-item']}>
+          <Link to="register">
+            sign up
           </Link>
         </li>
       </ul>
