@@ -11,10 +11,10 @@ export default function Register(props) {
         <Sidebar />
         <section className={classes['form-container']}>
           <form className={classes.form} action="http://localhost:8888/register" method="post" encType="application/x-www-form-urlencoded">
-            <label htmlFor="username">
+            <label htmlFor="uname">
               username
             </label>
-            <input type="text" placeholder="username" required id="username" name="userName" autoComplete="username"/>
+            <input type="text" placeholder="username" required id="uname" name="uname" autoComplete="username"/>
 
             <label htmlFor="password">
               password

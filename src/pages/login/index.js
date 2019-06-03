@@ -26,9 +26,9 @@ function Login(props) {
   function handleSubmit(event) {
     event.preventDefault()
 
-    const { target : { userName, password, remember} } = event
+    const { target : { uname, password, remember} } = event
     const data = {
-      userName: userName.value,
+      uname: uname.value,
       password: password.value,
       remember: remember.checked,
     }
@@ -68,8 +68,8 @@ function Login(props) {
               <input
                 required
                 type="text"
-                id="userName"
-                name="userName"
+                id="uname"
+                name="uname"
                 className={classes.userName}
                 placeholder="Email or user name"
               />

@@ -28,8 +28,8 @@ function Header(props) {
           )
           :null
         }
-        <li className={classes['nav-right-item']} title={user.email}>
-          mail
+        <li className={classes['nav-right-item']}>
+          {user.email ? user.email : 'mail'}
         </li>
         <li className={classes['nav-right-item']}>
           {
