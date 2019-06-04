@@ -9,6 +9,7 @@ import { isLogin } from '../../utils'
 
 function Header(props) {
   const { user } = props
+  console.log(isLogin(), 'isLogin')
   return (
     <header className={classes.header}>
       <div className={classes.logo}>

@@ -8,7 +8,7 @@ function Sidebar(props) {
     <aside className={classes.container}>
       <ul className={classes['nav-list']}>
         <li className={classes['nav-item']}>
-          <Link to="register">Register</Link>
+          <Link to="login">Login</Link>
         </li>
         <li className={classes['nav-item']}>
           <Link to="404">404</Link>
