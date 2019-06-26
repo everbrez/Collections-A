@@ -7,10 +7,15 @@ svg {
 
 a {
   text-decoration: none;
+  color: #1d1d1d;
 }
 
 a:hover {
   color: inherit;
+  background: linear-gradient(to right, tomato, orange);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-decoration: #d1d8de solid underline;
 }
 
 a:visited, a:active {

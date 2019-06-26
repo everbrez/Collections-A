@@ -12,9 +12,9 @@ function Header(props) {
   console.log(isLogin(), 'isLogin')
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>
-        Collections
-      </div>
+      <Link to="/" className={classes.logo}>
+          Collections
+      </Link>
       <div className={classes['search-container']}>
         <SearchIcon className={classes['search-icon']} />
         <input type="text" placeholder="Type to search ..." />

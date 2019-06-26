@@ -16,6 +16,7 @@ import { addUser } from '../../actions'
 
 function Login(props) {
   const [showPassword, togglePasswordVisibility] = useState(false)
+  const [remember, toggleRemember] = useState(false)
 
   const { history, addUser } = props
 
@@ -98,7 +99,20 @@ function Login(props) {
             {/* remember ? */}
             <section className={classes['checkbox-container']}>
               <label>
-                <input type="checkbox" id="remember" name="remember" className={classes.remember}/>
+                <div
+                  className={classnames(classes['checkbox'], {
+                    [classes.checked]: remember,
+                  })}
+                />
+                <input
+                  type="checkbox" 
+                  id="remember" 
+                  name="remember" 
+                  className={classes.remember} 
+                  checked={remember}
+                  hidden
+                  onChange={() => toggleRemember(state => !state)}
+                />
                 remember me
               </label>
 
