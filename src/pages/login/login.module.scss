@@ -1,16 +1,21 @@
-  $form-width: 500px;
-
+$form-width: 500px;
 $input-width: 53px;
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+}
 
 .form-container {
   width: $form-width;
-  position: fixed;
-  height: 100%;
-
-
-  left: 0;
-  right: 0;
   margin: auto;
+  padding: 2em 0;
 }
 
 .form {
@@ -19,7 +24,6 @@ $input-width: 53px;
   box-shadow: #e1e6f2 3px 3px 10px 1px;
   border-radius: 8px;
   overflow: hidden;
-  margin-top: 135px;
 }
 
 .userName, .password {

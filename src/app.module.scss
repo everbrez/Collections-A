@@ -6,8 +6,9 @@ svg {
 }
 
 a {
+  $color: #1d1d1d;
   text-decoration: none;
-  color: #1d1d1d;
+  color: $color;
 }
 
 a:hover {

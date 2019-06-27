@@ -56,7 +56,7 @@ function Login(props) {
   }
 
   return (
-    <>
+    <div className={classes.wrapper}>
       <Header />
       <main className={classes.container}>
         <section className={classnames(classes['form-container'])}>
@@ -129,7 +129,7 @@ function Login(props) {
           </form>
         </section>
       </main>
-    </>
+    </div>
   )
 }
 
